@@ -21,17 +21,15 @@ function increaseRankBy(n) {
 }  
 
 
-   
-
-
 function deepestChild() {
 
-  var target = document.getElementbyId('grand-node').querySelectorAll('div');
-  for (let i = 0; i < target.length; i++) {
-    
-    var deepChild = target.children[i];
-    }
-    return deepChild
+  var targetNode = document.querySelector('#grand-node');
+  var nextNode = targetNode.children[0]
+  while (nextNode) {
+    targetNode = nextNode
+    nextNode = targetNode.children[0]
+  }
+  return targetNode 
   }
   
   
