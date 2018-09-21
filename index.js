@@ -12,7 +12,7 @@ function increaseRankBy(n) {
    var lis = document.getElementById('app').querySelectorAll('ul.ranked-list li') 
     for (let i = 0; i < lis.length; i++) {
       
-     var newRank = parseInt(lis[i].innertHTML, 10)+n  
+     var newRank = parseInt(lis.innertHTML, 10)[i]+n  
     }
     return newRank
   }
