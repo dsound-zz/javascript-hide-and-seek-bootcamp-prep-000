@@ -1,4 +1,9 @@
+function getFirstSelector(selector) {
+  var element = document.querySelector(selector)
+  return element
+}
 
+<<<<<<< HEAD
 
 function getFirstSelector(selector) {
  var first = document.querySelector(selector);
@@ -36,3 +41,14 @@ function deepestChild() {
 
 
 
+=======
+function nestedTarget() {
+ var nestedEl = document.querySelector('#nested .target')
+ return nestedEl
+ 
+}
+
+function increaseRankBy(n) {
+  
+}
+>>>>>>> fd8097924ba1233b7430925754a3d57df1299dfa
